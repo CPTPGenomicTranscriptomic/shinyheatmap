@@ -24,12 +24,43 @@ Khomtchouk BB, Hennessy JR, Wahlestedt C: "shinyheatmap: Ultra fast low memory h
 
 ##### http://shinyheatmap.com/
 
-## Installation (for developers only)
+## Installation
 
-### Requirements for developers
+### Requirements
 
-* R programming language
-  * RStudio
+Please check CRAN (<a href="https://cran.r-project.org/" target="_blank">https://cran.r-project.org/</a>) for the installation of R.  
+Please check <a href="https://www.rstudio.com/" target="_blank">https://www.rstudio.com/</a> for the installation of RStudio. 
+
+
+## How to run (for users)
+
+##### Install the R Shiny package
+
+Start an R session using RStudio and run this line:  
+```
+if (!require("shiny")){install.packages("shiny")}
+```
+
+##### Start the app  
+
+Start an R session using RStudio and run this line:  
+```
+shiny::runGitHub("shinyheatmap", "CPTPGenomicTranscriptomic")
+```
+This command will download the code of shinyheatmap from GitHub to a temporary directory of your computer and then launch the Gshinyheatmap app in the web browser. Once the web browser was closed, the downloaded code of shinyheatmap would be deleted from your computer. Next time when you run this command in RStudio, it will download the source code of shinyheatmap from GitHub to a temporary directory again. 
+
+##### Choose your analysis set up  
+
+Fist of all read the instructions at the rigth panel.
+
+Once you are ready for the exam, you can download some example files to test the tool and look at the input file format.
+
+Just upload the download file as input.
+
+Click on the Static Heatmap button at the rigth panel.
+
+
+
 
 ## How to run (for developers only)
 
