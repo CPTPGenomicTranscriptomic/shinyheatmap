@@ -157,7 +157,7 @@ server <- shinyServer(function(input, output) {
       output$sorry2 <- renderUI({tagList("You are using an input dataset with", n, "rows and", k, "columns.  Please use our high-performance computing server", "for visualizing such large datasets:", url)})
     }
     else {
-      heatmaply(genexp_df_mat, k_row = 30, k_col = 4, srtCol = 45) %>% layout(margin = list(l = 100, b = 200))
+      heatmaply(genexp_df_mat, scale = input$scale,  k_row = 30, k_col = 4, srtCol = 45) %>% layout(margin = list(l = 100, b = 200))
     }
   })
   
