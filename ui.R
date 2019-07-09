@@ -4,6 +4,18 @@
 
 # ------------------------------------------------------------------------------------
 
+if (!require("data.table"))
+  install.packages("data.table")
+
+if (!require("gplots"))
+  install.packages("gplots")
+
+if (!require("heatmaply"))
+  install.packages("heatmaply")
+
+if (!require("tools"))
+  install.packages("tools")
+
 library(shiny)
 library(data.table)
 library(gplots)
