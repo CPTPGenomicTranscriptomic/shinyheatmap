@@ -4,13 +4,24 @@
 
 # ------------------------------------------------------------------------------------
 
+if (!require("data.table"))
+  install.packages("data.table")
+
+if (!require("gplots"))
+  install.packages("gplots")
+
+if (!require("heatmaply"))
+  install.packages("heatmaply")
+
+if (!require("tools"))
+  install.packages("tools")
+
 options(shiny.maxRequestSize=30*1024^2)
 library(shiny)
 library(data.table)
 library(gplots)
 library(heatmaply)
 library(tools)
-
 
 # backend 
 server <- shinyServer(function(input, output) {	
